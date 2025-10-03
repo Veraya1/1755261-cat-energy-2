@@ -11,28 +11,26 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="container">
-      <nav class="navigation">
-        <a class="navigation__logo" href="#">
-          <img class="logo__image" src="" width="101" height="18" alt="logo">
-          <span class="visually-hidden">Логотип магазина Кэт Энерджи.</span>
-        </a>
-        <ul class="navigation__list">
-          <li class="navigation__item navigation__item--current">
-            <a class="navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-        <button class="navigation__menu-button" type="button">
-          <span class="visually-hidden">Переключение меню</span>
-        </button>
-      </nav>
-    </div>
+    <a class="main-header__logo" href="index.html">
+      <img class="main-header__logo main-header__logo--text" src="" width="101" height="18" alt="logo">
+      <span class="visually-hidden">Логотип магазина Кэт Энерджи.</span>
+    </a>
+    <nav class="navigation-container">
+      <button class="navigation-container__menu-button" type="button">
+        <span class="visually-hidden">Переключение меню</span>
+      </button>
+      <ul class="navigation-container__list">
+        <li class="navigation-container__item navigation-container__item--current">
+          <a class="navigation-container__link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation-container__item">
+          <a class="navigation-container__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="navigation-container__item">
+          <a class="navigation-container__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main class="main-wrapper">
@@ -58,7 +56,7 @@
               </li>
             </ul>
           </div>
-          <button class="card__button button" type="button">заказать</button>
+          <a class="card__button button" href="" type="button">заказать</a>
         </li>
         <li class="catalog__item card">
           <img class="card__image" src="" width="84" height="100" alt="Товар">
@@ -79,7 +77,7 @@
               </li>
             </ul>
           </div>
-          <button class="card__button button" type="button">заказать</button>
+          <a class="card__button button" href="" type="button">заказать</a>
         </li>
         <li class="catalog__item card">
           <img class="card__image" src="" width="68" height="78" alt="Товар">
@@ -100,7 +98,7 @@
               </li>
             </ul>
           </div>
-          <button class="card__button button" type="button">заказать</button>
+          <a class="card__button button" href="" type="button">заказать</a>
         </li>
         <li class="catalog__item card">
           <img class="card__image" src="" width="84" height="100" alt="Товар">
@@ -121,7 +119,7 @@
               </li>
             </ul>
           </div>
-          <button class="card__button button" type="button">заказать</button>
+          <a class="card__button button" href="" type="button">заказать</a>
         </li>
         <li class="catalog__item card">
           <img class="card__image" src="" width="68" height="78" alt="Товар">
@@ -142,7 +140,7 @@
               </li>
             </ul>
           </div>
-          <button class="card__button button" type="button">заказать</button>
+          <a class="card__button button" href="" type="button">заказать</a>
         </li>
         <li class="catalog__item card">
           <img class="card__image" src="" width="84" height="100" alt="Товар">
@@ -163,7 +161,7 @@
               </li>
             </ul>
           </div>
-          <button class="card__button button" type="button">заказать</button>
+          <a class="card__button button" href="" type="button">заказать</a>
         </li>
         <li class="catalog__item card">
           <img class="card__image" src="" width="72" height="84" alt="Товар">
@@ -184,16 +182,15 @@
               </li>
             </ul>
           </div>
-          <button class="card__button button" type="button">заказать</button>
+          <a class="card__button button" href="" type="button">заказать</a>
         </li>
 
         <li class="catalog__item card card--add">
-          <img class="card__image" src="" width="68" height="86" alt="Товар">
+          <svg class="card__plus" width="68" height="86"></svg>
           <h3 class="card__title">Показать еще<br> 100500 товаров</h3>
           <p class="card__content">На самом деле вкусов гораздо больше!
           </p>
-          </div>
-          <button class="card__button button button-accent" type="button">показать все</button>
+          <button class="card__button button button--accent" type="button">показать все</button>
         </li>
       </ul>
     </section>
@@ -209,15 +206,15 @@
             <span class="product__volume">1 упаковка (100 г)</span>
             <span class="product__price">200 &#8381;</span>
           </p>
-          <button class="product__button button" type="button">заказать</button>
+          <a class="product__button button" href="" type="button">заказать</a>
         </li>
-        li class="additional-products__item product">
-        <h3 class="product__title">питьевая вода</h3>
-        <p class="product__content">
-          <span class="product__volume">5 литров</span>
-          <span class="product__price">50 &#8381;</span>
-        </p>
-        <button class="product__button button" type="button">заказать</button>
+        <li class="additional-products__item product">
+          <h3 class="product__title">питьевая вода</h3>
+          <p class="product__content">
+            <span class="product__volume">5 литров</span>
+            <span class="product__price">50 &#8381;</span>
+          </p>
+          <a class="product__button button" href="" type="button">заказать</a>
         </li>
         <li class="additional-products__item product">
           <h3 class="product__title">молоко</h3>
@@ -225,7 +222,7 @@
             <span class="product__volume">1 литр</span>
             <span class="product__price">100 &#8381;</span>
           </p>
-          <button class="product__button button" type="button">заказать</button>
+          <a class="product__button button" href="" type="button">заказать</a>
         </li>
         <li class="additional-products__item product">
           <h3 class="product__title">витамины</h3>
@@ -233,7 +230,7 @@
             <span class="product__volume">1 упаковка (30 г)</span>
             <span class="product__price">300 &#8381;</span>
           </p>
-          <button class="product__button button" type="button">заказать</button>
+          <a class="product__button button" href="" type="button">заказать</a>
         </li>
       </ul>
       <div class="additional-products__image gift">
@@ -245,17 +242,17 @@
     <section class="subcription">
       <h2 class="subcription__title">Акции и новинки</h2>
       <p class="subcription__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-      <div class="subscribe-form">
+      <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <input class="subscribe-form__input" type="email" placeholder="KUKLACHEV@GMAIL.COM" aria-label="Email для подписки" required />
         <button class="subscribe-form__button" type="submit">
           Подписаться
         </button>
-      </div>
+      </form>
     </section>
 
     <section class="contacts">
-      <div class="contacts__wrapper">
-        <h2 class="visually-hidden">Контактная информация</h2>
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <div class="contacts__text">
         <p class="contacts__lead">Приглашаем к сотрудничеству дилеров</p>
         <address class="contacts__address">ул. Большая
           Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></address>
