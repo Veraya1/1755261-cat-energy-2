@@ -12,33 +12,42 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
+      <picture>
+        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-picture-desktop.svg">
+        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-picture-tablet.svg">
+        <img class="logotype__picture" src="images/logo-picture-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+      </picture>
       <img class="main-header__logo main-header__logo--text" src="" width="101" height="18" alt="logo">
       <span class="visually-hidden">Логотип магазина Кэт Энерджи.</span>
     </a>
-    <nav class="navigation-container">
-      <button class="navigation-container__menu-button" type="button">
+    <nav class="main-nav">
+      <button class="main-nav__menu-button" type="button">
         <span class="visually-hidden">Переключение меню</span>
       </button>
-      <ul class="navigation-container__list">
-        <li class="navigation-container__item navigation-container__item--current">
-          <a class="navigation-container__link" href="index.html">Главная</a>
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--current">
+          <a class="main-nav__link" href="index.html">Главная</a>
         </li>
-        <li class="navigation-container__item">
-          <a class="navigation-container__link" href="catalog.html">Каталог продукции</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="navigation-container__item">
-          <a class="navigation-container__link" href="form.html">Подбор программы</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page__main">
     <section class="promo">
       <div class="promo__wrapper">
         <h1 class="promo__title title">Функциональное питание <br> для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="" width="280" height="270" alt="Упаковка еды для котов со вкусом курицы.">
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/promo-can-desktop@1x.png 1x, images/promo-can-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/promo-can-tablet@1x.png 1x, images/promo-can-tablet@2x.png 2x">
+          <img class="promo__image" src="images/promo-can-mobile@1x.png" srcset="images/promo-can-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая банка с питанием Cat Energy со вкусом курицы">
+        </picture>
         <button class="promo__button button" type="button">
           Подобрать программу
         </button>
@@ -49,8 +58,8 @@
       <h2 class="visually-hidden">Выбор программы</h2>
       <ul class="programs__list">
         <li class="programs__item programs__item--slim">
-          <svg class="programs__item-image" width="40" height="40">
-          </svg>
+          <img class="programs__item-image" width="40" height="40" alt="">
+          </img>
           <h3 class="programs__item-title">Похудение</h3>
           <p class="programs__item-description">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
@@ -58,8 +67,8 @@
           <a class="programs__item-link" href="#">каталог slim</a>
         </li>
         <li class="programs__item programs__item--pro">
-          <svg class="programs__item-image" width="40" height="40">
-          </svg>
+          <img class="programs__item-image" width="40" height="40" alt="">
+          </img>
           <h3 class="programs__item-title">Набор массы</h3>
           <p class="programs__item-description">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -110,8 +119,15 @@
           </dl>
           <p class="example__cost">Затраты на питание: <span class="example__price">15 тысяч руб.</span></p>
         </div>
-        <img class="example__image" src="" width="280" height="256" alt="Толстый и худой кот">
         <div class="example__range-bar">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-before-tablet-desktop@1x.png 1x, images/slider-before-tablet-desktop@2x.png 2x">
+            <img class="slider__image" src="images/slider-before-mobile@1x.png" srcset="images/slider-before-mobile@2x.png 2x" width="280" height="256" alt="Фото до: толстенький котик">
+          </picture>
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider-after-tablet-desktop@1x.png 1x, images/slider-after-tablet-desktop@2x.png 2x">
+            <img class="slider__image" src="images/slider-after-mobile@1x.png" srcset="images/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Фото после: худенький котик">
+          </picture>
           <button class="example__range-toggle" type="button" aria-label="Перемещение слайдера">
             <svg width="40" height="40"></svg>
           </button>
